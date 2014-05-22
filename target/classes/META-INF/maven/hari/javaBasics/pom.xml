@@ -3,4 +3,30 @@
   <groupId>hari</groupId>
   <artifactId>javaBasics</artifactId>
   <version>0.0.1-SNAPSHOT</version>
+  <build>
+      <plugins>
+        <plugin>
+            <artifactId>maven-compiler-plugin</artifactId>
+            <configuration>
+                <source>1.7</source>
+                <target>1.7</target>
+            </configuration>
+        </plugin>
+        <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-eclipse-plugin</artifactId>
+                <configuration>
+                    <downloadSources>true</downloadSources>
+                    <downloadJavadocs>true</downloadJavadocs>
+                </configuration>
+        </plugin>
+  </plugins>
+  </build>
+  <dependencies>
+  	<dependency>
+  		<groupId>com.google.guava</groupId>
+  		<artifactId>guava</artifactId>
+  		<version>16.0.1</version>
+  	</dependency>
+  </dependencies>
 </project>
