@@ -14,7 +14,7 @@ public class EnumMap {
 		System.out.println(m);
 		map.put((Sex)m, Sex.FEMALE);
 //		map.put(Sex.FEMALE, Sex.MALE);
-//		map.put(Sex.MALE, Sex.MALE);
+		map.put(Sex.MALE, Sex.MALE);
 		map.put(Sex.FEMALE, Sex.FEMALE);
 		for(Map.Entry<Sex,Sex> entry : map.entrySet()) {
 //			System.out.println(entry.getKey());
